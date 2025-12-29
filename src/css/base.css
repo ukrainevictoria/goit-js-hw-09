@@ -1,6 +1,6 @@
-:root {
+/* :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -28,5 +28,44 @@ main {
   flex-grow: 1;
 }
 main:has(.back-link) {
+  text-align: center;
+} */ 
+:root {
+  /* Базовий шрифт */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: #ffffff; /* замість rgba, щоб уникнути прозорості */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%; /* краще, ніж 100vh, не додає скролл через scrollbar */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%; /* замість 100vw */
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* fallback для main:has(.back-link) для браузерів без :has() */
+main[data-has-back-link="true"] {
   text-align: center;
 }

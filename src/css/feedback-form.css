@@ -1,0 +1,121 @@
+
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* ===== CONTAINER (ТІЛЬКИ ДЛЯ HEADER / LAYOUT) ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== FORM PAGE WRAPPER ===== */
+.form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ===== TITLE ===== */
+.main-title {
+  margin-bottom: 24px;
+}
+
+/* ===== FEEDBACK FORM ===== */
+.feedback-form {
+  width: 360px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== LABELS ===== */
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+/* ===== INPUTS ===== */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* ===== TEXTAREA ===== */
+.feedback-form textarea {
+  resize: none;
+}
+
+/* ===== FOCUS ===== */
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4e75ff;
+}
+
+/* ===== BUTTON ===== */
+.feedback-form button {
+  align-self: flex-start;
+  padding: 8px 16px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color 250ms ease;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #6c8cff;
+}
+
+/* ===== FIX GLOBAL STYLES CONFLICT ===== */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}

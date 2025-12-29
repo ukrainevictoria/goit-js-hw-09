@@ -17,6 +17,7 @@
 @import url('./back-link.css');
 
 /* ===== Page styles ===== */
+@import url('./feedback-form.css');
 * {
   box-sizing: border-box;
 }
@@ -58,3 +59,4 @@ body {
 .gallery-image:hover {
   transform: scale(1.03);
 }
+
